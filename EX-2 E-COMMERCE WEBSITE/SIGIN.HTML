@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Euphoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="EUPHORIA.png" class= "small" alt="Euphoria Logo">
+            <img src="SIGNIN-IMAGE.jpg" class= "large" alt="Fashion Models">
+        </div>
+        
+        <div class="right-section">
+            <header>
+                <nav>
+                    <div class="search-container">
+                        <input type="text" class="search-bar" placeholder="🔍 Search">
+                    </div>
+                    <select class="language-selector">
+                        <option>English (United States)</option>
+                    </select>
+                    <a href="SIGNIN.HTML"> <button class="login-btn">Login</button></a>
+                    <a href="SIGNUP.HTML"> <button class="signup-btn">Signup</button></a>
+                </nav>
+            </header>
+            <div class="signin-box">
+                <h2>Sign In Page</h2>
+                <button class="social-btn google"> <img src="google-icon.png" alt="Google"> Continue With Google</button>
+                <button class="social-btn twitter"> <img src="x-icon.png" alt="X"> Continue With X </button>
+                <p class="or-divider">OR</p>
+                <form>
+                    <label for="email">User name or email address</label>
+                    <input type="text" id="email" placeholder="" >
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="">
+                    <div class="password-options">
+                        <a href="RESET-PASSWORD.HTML" class="forgot-password">Forgot your password?</a>
+                    </div>
+                    <button type="submit" class="signin-btn">Sign In</button>
+                </form>
+                <p class="signup-link">Don’t have an account? <a href="SIGNUP.HTML">Sign Up</a></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    height: 90vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 10px;
+}
+
+.small {
+    width: 120px;
+}
+
+.large {
+    width: 100%;
+    height: 92%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.right-section {
+    padding: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.search-bar {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #5f51aa;
+    border-radius: 5px;
+}
+.language-selector {
+    border: none;
+    background: none;
+    font-size: 14px;
+}
+.login-btn, .signup-btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login-btn {
+    background: #6c5ce7;
+    color: white;
+}
+.signup-btn {
+    background: white;
+    color: #6c5ce7;
+    border: 1px solid #6c5ce7;
+}
+.signin-box {
+    text-align: left;
+}
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.social-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+.google {
+    background: #fff;
+    border: 1px solid gray;
+}
+.twitter {
+    background: #1DA1F2;
+    color: white;
+}
+.or-divider {
+    text-align: center;
+    margin: 10px 0;
+    color: #999;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.password-options {
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.forgot-password {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+.signin-btn {
+    width: 100%;
+    padding: 10px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.signup-link a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>

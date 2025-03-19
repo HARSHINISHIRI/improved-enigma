@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoria - Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">EUPHORIA</div>
+        <nav>
+            <ul>
+                <li><a href="HOME-PAGE.HTML">Home</a></li>
+                <li><a href="PRODUCT-LIST.HTML">Men</a></li>
+                <li><a href="PRODUCT-LIST.HTML">Women</a></li>
+                <li><a href="PRODUCT-DETAIL.HTML">Combos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Style</h1>
+            <p>Find the latest fashion trends for Men & Women.</p>
+            <a href="PRODUCT-LIST.HTML" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="category">
+            <img src="mens-fashion.jpg" alt="Men's Fashion">
+            <h2>Men's Collection</h2>
+        </div>
+        <div class="category">
+            <img src="womes-fashion.jpg" alt="Women's Fashion">
+            <h2>Women's Collection</h2>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Men's Jacket</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Women's Dress</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpeg" alt="Product 3">
+                <h3>Casual Shoes</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Euphoria. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<style>
+
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Featured Products */
+.featured {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured h2 {
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product button:hover {
+    background-color: grey;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+</style>

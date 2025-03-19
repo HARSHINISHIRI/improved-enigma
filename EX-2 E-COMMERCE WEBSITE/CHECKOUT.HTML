@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Euphoria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">EUPHORIA</div>
+        <nav>
+            <ul>
+                <li><a href="HOME-PAGE.HTML">Home</a></li>
+                <li><a href="PRODUCT-LIST.HTML">Men</a></li>
+                <li><a href="PRODUCT-LIST.HTML">Women</a></li>
+                <li><a href="PRODUCT-DETAIL.HTML">Offers</a></li>
+                <li><a href="PERSONAL-INFO.HTML">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Background -->
+    <div class="hero">
+        <h1>Checkout</h1>
+        <p>Secure Payment & Fast Delivery</p>
+    </div>
+
+    <!-- Checkout Container -->
+    <div class="checkout-container">
+        <!-- Left Section: Billing Details -->
+        <div class="checkout-left">
+            <h2>Billing Details</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" id="first-name" required>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="last-name" required>
+                    <label for="last-name">Last Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="country" required>
+                    <label for="country">Country</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="company">
+                    <label for="company">Company (Optional)</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="address" required>
+                    <label for="address">Street Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="city" required>
+                    <label for="city">City</label>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="text" id="state" required>
+                        <label for="state">State</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="postal-code" required>
+                        <label for="postal-code">Postal Code</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" required>
+                    <label for="phone">Phone Number</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="save-info">
+                    <label for="save-info">Save my info for a faster checkout</label>
+                </div>
+
+                <h3>Shipping Address</h3>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="same-address" checked>
+                    <label for="same-address">Same as billing address</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="different-address">
+                    <label for="different-address">Use a different address</label>
+                </div>
+
+                <h3>Shipping Method</h3>
+                <p>🚚 **Standard Delivery** (3-5 Business Days) – $5.00</p>
+                <p>⚡ **Express Shipping** (1-2 Business Days) – $15.00</p>
+            </form>
+        </div>
+
+        <!-- Right Section: Order Summary -->
+        <div class="checkout-right">
+            <h2>Order Summary</h2>
+            <div class="order-summary">
+                <div class="product">
+                    <img src="product5.jpg" alt="Product">
+                    <div class="product-details">
+                        <p>Black Elegant Dress</p>
+                        <p><strong>$49.99</strong></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product3.jpeg" alt="Product">
+                    <div class="product-details">
+                        <p>Leather Shoes</p>
+                        <p><strong>$39.99</strong></p>
+                    </div>
+                </div>
+                <p>🎉 **Savings** <span>-$10.00</span></p>
+                <p>🚚 **Shipping** <span>$5.00</span></p>
+                <hr>
+                <p><strong>Grand Total</strong> <span><strong>$84.98</strong></span></p>
+            </div>
+
+            <h3>Payment Method</h3>
+            <p>🔒 All transactions are **secure & encrypted**</p>
+            <div class="checkbox-group">
+                <input type="radio" name="payment" id="credit-card">
+                <label for="credit-card">💳 Credit Card</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" name="payment" id="cash-on-delivery">
+                <label for="cash-on-delivery">💵 Cash on Delivery</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" name="payment" id="paypal">
+                <label for="paypal">🅿️ PayPal</label>
+            </div>
+
+            <button class="pay-now">💳 Pay Now</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@euphoria.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>More Info</h3>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>Download App</h3>
+                <img src="google-play.png" class="google_play-image" alt="Google Play">
+                <img src="app-store.png" class="app_store-image" alt="App Store">
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Euphoria. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('fashion-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 50px;
+    color: black;
+}
+
+/* Checkout Container */
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 14px;
+    color: #999;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Order Summary */
+.product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 50px;
+    border-radius: 8px;
+}
+
+.pay-now {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.pay-now:hover {
+    background: #333;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.google_play-image {
+    width: 100px;
+    height: 50px;
+}
+.app_store-image {
+    width: 100px;
+    height: 50px;
+}
+</style>

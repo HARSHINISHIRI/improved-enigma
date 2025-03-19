@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Euphoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">EUPHORIA</div>
+        <nav>
+            <ul>
+                <li><a href="HOME-PAGE.HTML">Home</a></li>
+                <li><a href="PRODUCT-LIST.HTML">Men</a></li>
+                <li><a href="PRODUCT-LIST.HTML">Women</a></li>
+                <li><a href="PRDUCT-DETAIL.HTML">Offers</a></li>
+                <li><a href="PERSONAL-INFO.HTML">Contact</a></li>
+                <input type="text" placeholder="Search">
+                <a href="CART-PAGE.HTML" class="cart-icon">🛒</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <div class="product-detail-container">
+        <div class="product-image">
+            <img src="product1.jpg" alt="Men's Leather Jacket">
+        </div>
+
+        <div class="product-info">
+            <h1>Men's Leather Jacket</h1>
+            <p class="price">$49.99</p>
+            <p class="description">
+                Premium quality leather jacket for a stylish and modern look. Perfect for casual and formal wear.
+            </p>
+
+            <!-- Product Specifications -->
+            <div class="product-specs">
+                <p><strong>Neck:</strong> Stand Collar</p>
+                <p><strong>Sleeve:</strong> Full Sleeve</p>
+                <p><strong>Style:</strong> Biker, Casual</p>
+                <p><strong>Fit:</strong> Slim Fit</p>
+            </div>
+
+            <!-- Color Selection -->
+            <label>Colors Available:</label>
+            <div class="color-options">
+                <span class="color-box black"></span>
+                <span class="color-box brown"></span>
+                <span class="color-box gray"></span>
+            </div>
+
+            <!-- Size Selection -->
+            <label for="size">Select Size:</label>
+            <select id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+            </select>
+
+            <!-- Secure Payment & Free Shipping -->
+            <div class="benefits">
+                <p>✅ <strong>Secure Payment:</strong> 100% Payment Protection</p>
+                <p>🚚 <strong>Free Shipping:</strong> Get it in 3-5 days</p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Similar Products -->
+    <section class="similar-products">
+        <h2>Similar Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="product2.jpg" alt="Casual Sneakers">
+                <h3>Casual Sneakers</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product5.jpg" alt="Stylish T-Shirt">
+                <h3>Stylish T-Shirt</h3>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Euphoria. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Product Detail Container */
+.product-detail-container {
+    display: flex;
+    margin: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.product-info {
+    margin-left: 30px;
+    max-width: 500px;
+}
+
+.product-info h1 {
+    font-size: 28px;
+}
+
+.price {
+    color: #e60000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.product-specs {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-specs p {
+    margin: 5px 0;
+}
+
+/* Color Selection */
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #ddd;
+}
+
+.black { background-color: black; }
+.brown { background-color: brown; }
+.gray { background-color: gray; }
+
+/* Secure Payment & Free Shipping */
+.benefits {
+    background: #dff9fb;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.benefits p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.add-to-cart, .buy-now {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.add-to-cart:hover {
+    background-color: grey;
+}
+
+.buy-now {
+    background-color: red;
+}
+
+.buy-now:hover {
+    background-color: darkred;
+}
+
+/* Similar Products */
+.similar-products {
+    margin: 30px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product button:hover {
+    background-color: grey;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+</style>
