@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now - TechNova</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="TechNova Logo" />
+      <span class="logo-text">TechNova Careers</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="application-form">
+    <h2>Job Application Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="position">Position Applying For:</label>
+      <select id="position" name="position">
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Engineer">Backend Engineer</option>
+        <option value="UI/UX Designer">UI/UX Designer</option>
+      </select>
+
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+      <label for="message">Why should we hire you?</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechNova Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
